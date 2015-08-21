@@ -53,6 +53,30 @@ Get a list of all local dumps of any dumpType.
 + Response 200 (application/json)
 
     + Attributes (array[Dump])
+    
+    + Body
+    
+            [
+                {
+                    "id"      : "foo-100",
+                    "created" : "2015-08-16T12:36:51.343245398+02:00",
+                    "report"  : "foo 100 is such a lame name",
+                    "errors"  : "",
+                    "comment" : "my first dump",
+                    "path"    : "/dump/dumpster/foo-100",
+                    "type"    : "foo"
+                    
+                },
+                {
+                    "id"      : "foo-100",
+                    "created" : "2015-08-16T12:36:51.343245398+02:00",
+                    "report"  : "foo 100 is such a lame name",
+                    "errors"  : "",
+                    "comment" : "my first dump",
+                    "path"    : "/dump/dumpster/foo-100",
+                    "type"    : "bar"
+                }
+            ]
 
 # dumps of a type [/dump/{dumpType}]
 
